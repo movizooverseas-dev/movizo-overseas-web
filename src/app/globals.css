@@ -2,7 +2,13 @@
 @import "tw-animate-css";
 
 
+/* Smooth anchor scrolling */
 html { scroll-behavior: smooth; }
+
+/* Light focus ring for accessibility */
+:focus-visible { outline: 2px solid rgb(14 165 233 / 0.6); outline-offset: 2px; }
+
+/* html { scroll-behavior: smooth; }
 
 @custom-variant dark (&:is(.dark *));
 
@@ -122,5 +128,5 @@ html { scroll-behavior: smooth; }
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
 

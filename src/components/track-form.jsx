@@ -18,12 +18,12 @@ export function TrackForm({ inline = false }) {
   return (
     <form onSubmit={submit} className={inline ? "flex gap-2" : "flex w-full max-w-xl gap-2"}>
       <input
-        className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-400 outline-none ring-indigo-500/0 transition focus:ring-2"
+        className="w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 outline-none ring-sky-500/0 transition focus:ring-2"
         placeholder="Enter AWB / Order ID"
         value={awb}
         onChange={(e) => setAwb(e.target.value)}
       />
-      <Button type="submit" className="bg-indigo-600 hover:bg-indigo-500">Track</Button>
+      <Button type="submit" className="bg-sky-600 hover:bg-sky-500">Track</Button>
     </form>
   );
 }
