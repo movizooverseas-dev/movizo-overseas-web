@@ -6,13 +6,13 @@ import Image from "next/image";
 const logos = [
   // Place brand logo files in /public/partners and reference them here
   { src: "/partners/delhivery.png", alt: "Delhivery" },
-  //{ src: "/partners/amazon.svg", alt: "Amazon Shipping" },
-  //{ src: "/partners/blue-dart.svg", alt: "Blue Dart" },
+  { src: "/partners/Trackon.png", alt: "Trackon" },
+  { src: "/partners/Fedex.png", alt: "Fedex" },
   { src: "/partners/dtdc.png", alt: "DTDC" },
-  //{ src: "/partners/xpressbees.svg", alt: "XpressBees" },
+  { src: "/partners/skynet.png", alt: "skynet" },
   { src: "/partners/aramex.png", alt: "Aramex" },
- // { src: "/partners/ecom-express.svg", alt: "Ecom Express" },
-  //{ src: "/partners/ekart.svg", alt: "Ekart" },
+  { src: "/partners/DHL.png", alt: "DHL" },
+  { src: "/partners/Dpex.png", alt: "Dpex" },
   // ...add more as needed
 ];
 
