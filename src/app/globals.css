@@ -130,3 +130,40 @@ html { scroll-behavior: smooth; }
   }
 } */
 
+/* src/app/globals.css */
+
+/* Horizontal fade on both edges so logos fade in/out nicely */
+.mask-fade-x {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Seamless marquee: shift by 50% because the track is duplicated side-by-side */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Track helpers */
+.marquee-track {
+  display: inline-flex;
+  gap: 1.5rem;               /* space between logos */
+  will-change: transform;    /* smoother animation */
+}
+.marquee-left {
+  animation: marquee-left 28s linear infinite;
+}
+.marquee-right {
+  animation: marquee-right 28s linear infinite;
+}
+
+/* Optional: pause on hover */
+.marquee-paused:hover .marquee-left,
+.marquee-paused:hover .marquee-right {
+  animation-play-state: paused;
+}
+

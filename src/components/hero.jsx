@@ -96,7 +96,7 @@ export function Hero() {
   const slides = useMemo(
     () => [
       { src: "/container-ship.png", alt: "Container ship at sea" },
-      { src: "/images/cargo-plane.jpg", alt: "Cargo plane on runway" },
+      { src: "/cargo-plane.jpg", alt: "Cargo plane on runway" },
       { src: "/images/warehouse.jpg", alt: "High‑capacity logistics warehouse" },
     ],
     []

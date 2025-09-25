@@ -39,11 +39,35 @@
 // }
 
 // app/page.js
-"use client";
+// "use client";
 
+// import { Navbar } from "@/components/navbar";
+// import { Hero } from "@/components/hero";
+// import { QuickLinks } from "@/components/quick-links";
+// import { Services } from "@/components/services";
+// import { Stats } from "@/components/stats";
+// import { Footer } from "@/components/footer";
+
+// export default function Page() {
+//   return (
+//     <>
+//       <Navbar />
+//       <main>
+//         <Hero />
+//         <QuickLinks />
+//         <Services />
+//         <Stats />
+//       </main>
+//       <Footer />
+//     </>
+//   );
+// }
+//*************************************************************************************** */
+// src/app/page.js
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { QuickLinks } from "@/components/quick-links";
+import PartnersMarquee from "@/components/partners-marquee";
 import { Services } from "@/components/services";
 import { Stats } from "@/components/stats";
 import { Footer } from "@/components/footer";
@@ -55,6 +79,7 @@ export default function Page() {
       <main>
         <Hero />
         <QuickLinks />
+        <PartnersMarquee />
         <Services />
         <Stats />
       </main>
@@ -62,4 +87,21 @@ export default function Page() {
     </>
   );
 }
+
+//*********************************************************************************** */
+// src/app/page.js
+// import Services from "@/components/services";
+// import MoreServices from "@/components/more-services";
+
+// export default function Home() {
+//   return (
+//     <>
+//       {/* ...existing sections like Hero, QuickLinks, etc. */}
+//       <Services />
+//       <MoreServices />
+//       {/* ...rest of the page */}
+//     </>
+//   );
+// }
+
 
