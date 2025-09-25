@@ -199,7 +199,7 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl h-14 md:h-16 px-4 md:px-6 flex items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-9 w-32 md:h-10 md:w-36 overflow-hidden">
+          <div className="relative h-9 w-32 md:h-12 md:w-38 overflow-hidden">
             <Image
               src="/movizoLogo.png"
               alt="Movizo Logo"
