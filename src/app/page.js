@@ -69,7 +69,7 @@ import { Hero } from "@/components/hero";
 import { QuickLinks } from "@/components/quick-links";
 import PartnersMarquee from "@/components/partners-marquee";
 import { Services } from "@/components/services";
-import { Stats } from "@/components/stats";
+//import { Stats } from "@/components/stats";
 import { Footer } from "@/components/footer";
 
 export default function Page() {
@@ -79,9 +79,8 @@ export default function Page() {
       <main>
         <Hero />
         <QuickLinks />
-        <PartnersMarquee />
         <Services />
-        <Stats />
+        <PartnersMarquee />
       </main>
       <Footer />
     </>
