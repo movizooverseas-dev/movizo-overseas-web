@@ -207,7 +207,7 @@ export default function AboutPage() {
         {/* Optional stats */}
         <section className="mx-auto max-w-7xl px-4 pb-10 md:px-6">
           <Reveal>
-            <div className="grid grid-cols-2 gap-4 rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm md:grid-cols-4">
+            {/* <div className="grid grid-cols-2 gap-4 rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm md:grid-cols-4">
               {[
                 { k: "20+", v: "Years in logistics" },
                 { k: "6.5k+", v: "Partner locations" },
@@ -219,7 +219,7 @@ export default function AboutPage() {
                   <div className="mt-1 text-xs text-slate-600">{s.v}</div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </Reveal>
         </section>
 
