@@ -32,7 +32,7 @@ export default function PartnersMarquee() {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-6 py-12">
-        <h2 className="text-2xl font-semibold tracking-tight text-center">
+        <h2 className="text-4xl font-extrabold tracking-tight text-center bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent">
           Trusted Courier Partners
         </h2>
 

@@ -79,7 +79,7 @@ export function Services() {
     <section id="services" className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-14 md:px-6">
         <Reveal>
-          <h2 className="text-2xl font-semibold tracking-tight">Services</h2>
+          <h2 className="text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight">Services</h2>
         </Reveal>
 
         {/* 1 / 2 / 4 column responsive grid */}
@@ -87,10 +87,10 @@ export function Services() {
           {items.map(({ title, desc, icon: Icon }, i) => (
             <Reveal key={title} delay={0.05 * i}>
               <div className="group h-full rounded-xl border border-blue-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-                <div className="flex h-16 w-16 items-center justify-center rounded-md bg-blue-50 text-blue-600">
+                <div className="flex h-16 w-16 items-center justify-center rounded-md bg-blue-50 text-sky-500">
                   <Icon className="h-10 w-10" aria-hidden="true" />
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-gray-900">{title}</h3>
+                <h3 className="mt-4 text-lg font-bold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent">{title}</h3>
                 <p className="mt-2 text-sm text-gray-600">{desc}</p>
               </div>
             </Reveal>
