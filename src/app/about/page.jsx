@@ -1,34 +1,4 @@
-// // app/about/page.js
-// "use client";
-
-// import { Navbar } from "@/components/navbar";
-// import { Footer } from "@/components/footer";
-// import { Reveal } from "@/components/animations/reveal";
-
-// export default function AboutPage() {
-//   return (
-//     <>
-//       <Navbar />
-//       <main className="bg-white">
-//         <section className="mx-auto max-w-7xl px-4 py-14 md:px-6">
-//           <Reveal>
-//             <h1 className="text-3xl font-semibold tracking-tight">About Movizo</h1>
-//           </Reveal>
-//           <Reveal delay={0.05}>
-//             <p className="mt-3 max-w-2xl text-slate-600">
-//               Movizo Overseas Pvt. Ltd. delivers dependable logistics across air, ocean, and surface with a service mindset focused on time, care, and communication.
-//             </p>
-//           </Reveal>
-//         </section>
-//       </main>
-//       <Footer />
-//     </>
-//   );
-// }
-
-//******************************************************************************************************************************************************* */
-
-// app/about/page.tsx (or page.js)
+// app/about/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -40,36 +10,31 @@ const VALUES = [
   {
     key: "integrity",
     title: "Integrity",
-    desc:
-      "We foster a vibrant work culture nourished with trust and ethics.",
-    icon: "/integrity.png", // public/icons/integrity.png
+    desc: "We foster a vibrant work culture nourished with trust and ethics.",
+    icon: "/integrity.png",
   },
   {
     key: "people-first",
     title: "People First Culture",
-    desc:
-      "People‑centric ethos drives our logistics innovation and prowess.",
+    desc: "People‑centric ethos drives our logistics innovation and prowess.",
     icon: "/people-first.png",
   },
   {
     key: "service-quality",
     title: "Service Quality",
-    desc:
-      "Consistency in elevating service quality standards sets us apart.",
+    desc: "Consistency in elevating service quality standards sets us apart.",
     icon: "/service-quality.png",
   },
   {
     key: "benefit-sharing",
     title: "Benefit Sharing",
-    desc:
-      "Competitive pricing and benefit sharing foster enduring relationships.",
+    desc: "Competitive pricing and benefit sharing foster enduring relationships.",
     icon: "/benefit-sharing.png",
   },
   {
     key: "innovation",
     title: "Innovation",
-    desc:
-      "We harness new‑age technology and data intelligence for accuracy.",
+    desc: "We harness new‑age technology and data intelligence for accuracy.",
     icon: "/innovation.png",
   },
 ];
@@ -79,6 +44,20 @@ export default function AboutPage() {
     <>
       <Navbar />
       <main className="bg-white">
+        {/* Top intro (optional page title) */}
+        {/* <section className="mx-auto max-w-7xl px-4 pt-12 md:px-6">
+          <Reveal>
+            <h1 className="inline-block text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight">
+              About Movizo
+            </h1>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="mt-3 max-w-2xl text-slate-600">
+              Movizo Overseas Pvt. Ltd. delivers dependable logistics across air, ocean, and surface with a service mindset focused on time, care, and communication.
+            </p>
+          </Reveal>
+        </section> */}
+
         {/* Vision & Mission with external PNGs */}
         <section className="bg-gradient-to-b from-blue-50 to-white">
           <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
@@ -87,7 +66,7 @@ export default function AboutPage() {
               <div className="flex justify-center">
                 <div className="relative w-full max-w-[560px]">
                   <Image
-                    src="/vision.png"      // public/vision.png
+                    src="/vision.png"
                     alt="Vision"
                     width={560}
                     height={560}
@@ -99,8 +78,8 @@ export default function AboutPage() {
               </div>
 
               <div>
-                <p className="text-xs uppercase tracking-wide text-blue-700/80">Vision</p>
-                <h2 className="mt-2 text-3xl font-semibold text-slate-900 md:text-4xl">
+                <p className="mt-2 inline-block text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight leading-normal">Vision</p>
+                <h2 className="mt-2 inline-block text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight leading-normal">
                   Be the most preferred, tech‑driven supply‑chain partner
                 </h2>
                 <p className="mt-3 max-w-prose text-slate-600">
@@ -114,8 +93,8 @@ export default function AboutPage() {
             {/* Row 2: Mission (text left), big PNG right */}
             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
               <div>
-                <p className="text-xs uppercase tracking-wide text-blue-700/80">Mission</p>
-                <h2 className="mt-2 text-3xl font-semibold text-slate-900 md:text-4xl">
+                <p className="mt-2 inline-block text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight leading-normal">Mission</p>
+                <h2 className="mt-2 inline-block text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight leading-normal">
                   Deliver accuracy, speed, and care—every single time
                 </h2>
                 <p className="mt-3 max-w-prose text-slate-600">
@@ -126,7 +105,7 @@ export default function AboutPage() {
               <div className="flex justify-center">
                 <div className="relative w-full max-w-[560px]">
                   <Image
-                    src="/mission.png"    // public/mission.png
+                    src="/mission.png"
                     alt="Mission"
                     width={560}
                     height={560}
@@ -143,14 +122,16 @@ export default function AboutPage() {
         {/* Story */}
         <section className="mx-auto max-w-7xl px-4 pb-10 md:px-6">
           <div className="mx-auto max-w-3xl">
-            <Reveal>
-              <h2 className="text-xl font-semibold text-slate-900">Our story</h2>
-            </Reveal>
-            <Reveal delay={0.05}>
+            {/* <Reveal>
+              <h2 className="inline-block text-xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent">
+                Our story
+              </h2>
+            </Reveal> */}
+            {/* <Reveal delay={0.05}>
               <p className="mt-3 text-slate-600">
                 Starting with a small, focused team, Movizo set out to raise the bar on reliability and accessibility in parcel logistics—growing from regional operations to national and international coverage while keeping services efficient and economical.
               </p>
-            </Reveal>
+            </Reveal> */}
           </div>
         </section>
 
@@ -160,7 +141,7 @@ export default function AboutPage() {
             {/* Left: heading + intro */}
             <div className="md:col-span-2">
               <Reveal>
-                <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+                <h2 className="inline-block text-3xl font-extrabold tracking-tight bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent">
                   Our Values
                 </h2>
               </Reveal>
@@ -193,34 +174,40 @@ export default function AboutPage() {
         </section>
 
         {/* Culture note */}
-        <section className="mx-auto max-w-7xl px-4 pb-10 md:px-6">
-          <Reveal>
-            <div className="rounded-2xl border border-blue-200 bg-blue-50 p-6">
-              <h3 className="text-base font-semibold text-slate-900">A people‑centric culture</h3>
-              <p className="mt-2 text-sm text-slate-700">
-                We cultivate trust, respect, and collaboration—prioritizing employee well‑being and customer satisfaction in every delivery.
-              </p>
-            </div>
-          </Reveal>
-        </section>
+<section className="mx-auto max-w-7xl px-4 pb-10 md:px-6">
+  <Reveal>
+    <div className="mx-auto max-w-sm md:max-w-md">
+      <div className="aspect-square overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        {/* Image area (slightly taller than half to avoid seam) */}
+        <div className="relative h-[51%] w-full">
+          <img
+            src="/culture.png"
+            alt="People‑centric culture"
+            className="absolute inset-0 block h-full w-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        {/* Content area (slightly shorter) */}
+        <div className="flex h-[49%] flex-col items-start justify-center p-6">
+          <h3 className="inline-block text-lg font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight">
+            A people‑centric culture
+          </h3>
+          <p className="mt-2 text-sm text-slate-700">
+            We cultivate trust, respect, and collaboration—prioritizing employee well‑being and customer satisfaction in every delivery.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Reveal>
+</section>
+
+
+
 
         {/* Optional stats */}
         <section className="mx-auto max-w-7xl px-4 pb-10 md:px-6">
-          <Reveal>
-            {/* <div className="grid grid-cols-2 gap-4 rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm md:grid-cols-4">
-              {[
-                { k: "20+", v: "Years in logistics" },
-                { k: "6.5k+", v: "Partner locations" },
-                { k: "10k+", v: "Pin codes covered" },
-                { k: "24x7", v: "Track & support" },
-              ].map((s) => (
-                <div key={s.v}>
-                  <div className="text-2xl font-semibold text-slate-900">{s.k}</div>
-                  <div className="mt-1 text-xs text-slate-600">{s.v}</div>
-                </div>
-              ))}
-            </div> */}
-          </Reveal>
+          <Reveal>{/* reserved for future stats */}</Reveal>
         </section>
 
         {/* CTA */}
