@@ -356,7 +356,7 @@ export function QuickLinks() {
                 transition={{ type: "spring", stiffness: 160, damping: 20 }}
                 className="h-full"
               >
-                <Card className="group relative h-full overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-lg hover:border-sky-100">
+                <Card className="relative h-full overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-lg hover:border-sky-100">
                   <CardHeader className="flex flex-row items-start justify-between gap-3 pb-2">
                     <div className="space-y-1">
                       <CardTitle className="text-xl  font-bold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent">{item.title}</CardTitle>

@@ -1,4 +1,5 @@
 // app/layout.js
+import { Navbar } from "@/components/navbar";
 import "./globals.css";
 
 export const metadata = {
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-dvh bg-white text-slate-800 antialiased">
+      <Navbar />
         {children}
       </body>
     </html>
