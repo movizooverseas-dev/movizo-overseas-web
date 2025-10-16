@@ -280,7 +280,7 @@ export default function TrackingPage() {
           <RadioGroup value={trackBy} onValueChange={setTrackBy} className="flex gap-6 mb-6 justify-center">
             <div className="flex items-center gap-2">
               <RadioGroupItem value="awb" id="radio-awb" />
-              <label htmlFor="radio-awb" className="cursor-pointer select-none">AWB</label>
+              <label htmlFor="radio-awb" className="cursor-pointer select-none">AWB Tracking No</label>
             </div>
           </RadioGroup>
 
