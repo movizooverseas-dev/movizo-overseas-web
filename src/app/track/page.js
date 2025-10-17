@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Card } from "@/components/ui/card";
 import LoaderPortal from "@/components/LoaderPortal";
+import Image from "next/image";
 
 // Replace with your image path
 const imagePath = "/track-order.png";
@@ -56,7 +57,9 @@ export default function TrackingPage() {
         <div className="w-full max-w-5xl flex flex-col md:flex-row items-start gap-10">
           {/* Left/Image (only visible on md+) */}
           <div className="hidden md:flex flex-1 items-center justify-center">
-            <img
+            <Image
+             width={550}
+             height={550}
               src={imagePath}
               alt="Tracking visual"
               className="max-h-[320px] w-auto rounded-xl"
