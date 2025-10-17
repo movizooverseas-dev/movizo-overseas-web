@@ -1,12 +1,10 @@
 // app/about/page.tsx
 "use client";
 
-import Image from "next/image";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/animations/reveal";
-import Loader from "@/components/Loader";
+import { Footer } from "@/components/footer";
 import LoaderPortal from "@/components/LoaderPortal";
+import Image from "next/image";
 
 const VALUES = [
   {
@@ -47,19 +45,6 @@ export default function AboutPage() {
       <LoaderPortal>
 
       <main className="bg-white">
-        {/* Top intro (optional page title) */}
-        {/* <section className="mx-auto max-w-7xl px-4 pt-12 md:px-6">
-          <Reveal>
-          <h1 className="inline-block text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight">
-          About Movizo
-            </h1>
-          </Reveal>
-          <Reveal delay={0.05}>
-            <p className="mt-3 max-w-2xl text-slate-600">
-              Movizo Overseas Pvt. Ltd. delivers dependable logistics across air, ocean, and surface with a service mindset focused on time, care, and communication.
-              </p>
-              </Reveal>
-        </section> */}
 
         {/* Vision & Mission with external PNGs */}
         <section className="bg-gradient-to-b from-blue-50 to-white">
