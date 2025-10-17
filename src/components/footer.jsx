@@ -74,18 +74,18 @@ export function Footer() {
             <h4 className="text-sm font-semibold text-slate-900">Contact</h4>
             <ul className="mt-3 space-y-2 text-sm text-slate-600">
               <li>New Delhi, India</li>
-              <li>+91-8076991804</li>
-              <li>info@movizooverseas.com</li>
+              <li>+91-XXXXXXXXXX</li>
+              <li>support@movizooverseas.com</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-10 flex items-center justify-between border-t border-slate-200 pt-6 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} Movizo Overseas Pvt. Ltd. All rights reserved.</p>
-          {/* <div className="flex gap-4">
+          <div className="flex gap-4">
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>
