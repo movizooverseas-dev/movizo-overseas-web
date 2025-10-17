@@ -191,7 +191,6 @@ export default function ContactPage() {
   return (
     <>
       <LoaderPortal>
-
       <main className="bg-white">
         {/* Hero */}
         <section className="relative bg-gradient-to-b from-blue-50 via-blue-100 to-white">
