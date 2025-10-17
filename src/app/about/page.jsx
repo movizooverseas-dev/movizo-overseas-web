@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/animations/reveal";
+import Loader from "@/components/Loader";
+import LoaderPortal from "@/components/LoaderPortal";
 
 const VALUES = [
   {
@@ -42,20 +44,21 @@ const VALUES = [
 export default function AboutPage() {
   return (
     <>
-      <Navbar />
+      <LoaderPortal>
+
       <main className="bg-white">
         {/* Top intro (optional page title) */}
         {/* <section className="mx-auto max-w-7xl px-4 pt-12 md:px-6">
           <Reveal>
-            <h1 className="inline-block text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight">
-              About Movizo
+          <h1 className="inline-block text-4xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent tracking-tight">
+          About Movizo
             </h1>
           </Reveal>
           <Reveal delay={0.05}>
             <p className="mt-3 max-w-2xl text-slate-600">
               Movizo Overseas Pvt. Ltd. delivers dependable logistics across air, ocean, and surface with a service mindset focused on time, care, and communication.
-            </p>
-          </Reveal>
+              </p>
+              </Reveal>
         </section> */}
 
         {/* Vision & Mission with external PNGs */}
@@ -73,7 +76,7 @@ export default function AboutPage() {
                     sizes="(min-width: 1024px) 560px, 100vw"
                     className="h-auto w-full object-contain drop-shadow-2xl"
                     priority={false}
-                  />
+                    />
                 </div>
               </div>
 
@@ -124,14 +127,14 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl">
             {/* <Reveal>
               <h2 className="inline-block text-xl font-extrabold bg-gradient-to-r from-sky-300 via-sky-600 to-sky-800 bg-clip-text text-transparent">
-                Our story
+              Our story
               </h2>
-            </Reveal> */}
+              </Reveal> */}
             {/* <Reveal delay={0.05}>
               <p className="mt-3 text-slate-600">
-                Starting with a small, focused team, Movizo set out to raise the bar on reliability and accessibility in parcel logistics—growing from regional operations to national and international coverage while keeping services efficient and economical.
+              Starting with a small, focused team, Movizo set out to raise the bar on reliability and accessibility in parcel logistics—growing from regional operations to national and international coverage while keeping services efficient and economical.
               </p>
-            </Reveal> */}
+              </Reveal> */}
           </div>
         </section>
 
@@ -162,7 +165,7 @@ export default function AboutPage() {
                     width={40}
                     height={40}
                     className="h-10 w-10 object-contain"
-                  />
+                    />
                   <div>
                     <p className="text-sm font-semibold text-slate-900">{v.title}</p>
                     <p className="mt-1 text-sm text-slate-600">{v.desc}</p>
@@ -185,7 +188,7 @@ export default function AboutPage() {
             alt="People‑centric culture"
             className="absolute inset-0 block h-full w-full object-cover"
             loading="lazy"
-          />
+            />
         </div>
 
         {/* Content area (slightly shorter) */}
@@ -231,6 +234,7 @@ export default function AboutPage() {
         </section>
       </main>
       <Footer />
+    </LoaderPortal>
     </>
   );
 }

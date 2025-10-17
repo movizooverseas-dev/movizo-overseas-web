@@ -64,24 +64,26 @@
 // }
 //*************************************************************************************** */
 // src/app/page.js
-import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
-import { QuickLinks } from "@/components/quick-links";
 import PartnersMarquee from "@/components/partners-marquee";
+import { QuickLinks } from "@/components/quick-links";
 import { Services } from "@/components/services";
 //import { Stats } from "@/components/stats";
 import { Footer } from "@/components/footer";
+import  LoaderPortal from "@/components/LoaderPortal";
 
 export default function Page() {
   return (
     <>
-      <main className="mt-10">
+      <LoaderPortal />
+      <main className="mt-10">        
         <Hero />
         <QuickLinks />
         <Services />
         <PartnersMarquee />
       </main>
       <Footer />
+      <LoaderPortal />
     </>
   );
 }

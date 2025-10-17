@@ -171,6 +171,7 @@
 
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import LoaderPortal from "@/components/LoaderPortal";
 
 const CONTACT = {
   titleTop: "Contact us",
@@ -189,7 +190,8 @@ const MAP_EMBED_SRC =
 export default function ContactPage() {
   return (
     <>
-      <Navbar />
+      <LoaderPortal>
+
       <main className="bg-white">
         {/* Hero */}
         <section className="relative bg-gradient-to-b from-blue-50 via-blue-100 to-white">
@@ -252,7 +254,7 @@ export default function ContactPage() {
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                  >
+                    >
                     <path d="M20 4H4a2 2 0 00-2 2v.4l10 6 10-6V6a2 2 0 00-2-2z" />
                     <path d="M22 8.4l-9.4 5.64a2 2 0 01-2.2 0L1 8.4V18a2 2 0 002 2h16a2 2 0 002-2V8.4z" />
                   </svg>
@@ -302,13 +304,14 @@ export default function ContactPage() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   style={{ border: 0 }}
-                />
+                  />
               </div>
             </div>
           </div>
         </section>
       </main>
       <Footer />
+      </LoaderPortal>
     </>
   );
 }
