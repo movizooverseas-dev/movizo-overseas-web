@@ -27,9 +27,11 @@ export function Footer() {
           <div id="contact">
             <h4 className="text-sm font-semibold text-slate-900">Contact</h4>
             <ul className="mt-3 space-y-2 text-sm text-slate-600">
-              <li>New Delhi, India</li>
-              <li>+91-XXXXXXXXXX</li>
-              <li>support@movizooverseas.com</li>
+              <li>New Delhi, India 
+                A-178, Shop No. 2, Ground Floor, Ganesh Nagar
+              </li>
+              <li>+91-8076991804</li>
+              <li>info@movizooverseas.com</li>
             </ul>
           </div>
         </div>
