@@ -9,8 +9,8 @@ import { Card } from '@/components/ui/card';
 const STAGES = [
   'Order Booked',
   'Order Picked',
-  'In Transit',
   'Order Departed',
+  'In Transit',
   'At Destination',
   'Out for Delivery',
   'Delivered',
@@ -21,8 +21,8 @@ const statusMap = [
   { stage: 'Order Booked', match: ['information received', 'process further', 'softdata', 'booked'] },
   { stage: 'Order Picked', match: ['picked', 'pick up', 'picked up'] },
   // In Transit events include airline handover, customs
-  { stage: 'In Transit', match: ['handover to airlines', 'custom clearance', 'in transit', 'customs', 'delay', 'progress'] },
   { stage: 'Order Departed', match: ['depart', 'dispatched', 'ready to connect', 'linehaul'] },
+  { stage: 'In Transit', match: ['handover to airlines', 'custom clearance', 'in transit', 'customs', 'delay', 'progress'] },
   { stage: 'At Destination', match: ['arrived', 'at destination', 'destination', 'warehouse', 'last mile', 'received at'] },
   { stage: 'Out for Delivery', match: ['out for delivery'] },
   { stage: 'Delivered', match: ['delivered'] },
