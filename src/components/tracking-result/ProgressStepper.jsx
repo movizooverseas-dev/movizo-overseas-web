@@ -307,8 +307,8 @@ import {
 const ICONS = {
   'Order Booked': FileCheck,
   'Order Picked': PackageCheck,
-  'In Transit': MoveDiagonal,
   'Order Departed': PlaneTakeoff,
+  'In Transit': MoveDiagonal,
   'At Destination': MapPin,
   'Out for Delivery': Truck,
   'Delivered': CheckCircle2,
