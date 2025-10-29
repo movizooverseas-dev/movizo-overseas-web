@@ -8,7 +8,6 @@ const logos = [
   { src: "/partners/delhivery.png", alt: "Delhivery" },
   { src: "/partners/Trackon.png", alt: "Trackon" },
   { src: "/partners/Fedex.png", alt: "Fedex" },
-  { src: "/partners/dtdc.png", alt: "DTDC" },
   { src: "/partners/skynet.png", alt: "skynet" },
   { src: "/partners/aramex.png", alt: "Aramex" },
   { src: "/partners/DHL.png", alt: "DHL" },
